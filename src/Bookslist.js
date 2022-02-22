@@ -30,7 +30,7 @@ export function Booklist() {
   return (
     <div>
       <h1 className="head">
-        <LibraryBooksIcon /> Self-help Books Mini Library📖
+        <LibraryBooksIcon /> Motivational Books Mini Library📖
       </h1>
       <div className="list">
         {booklist.map(
