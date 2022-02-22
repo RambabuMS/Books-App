@@ -51,7 +51,7 @@ export default function App() {
   ];
 
   const [state, setState] = useState({
-    left: false,
+    top: false,
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -95,7 +95,7 @@ export default function App() {
         <div className="App">
           <AppBar position="static" color="success">
             <Toolbar>
-              {["left"].map((anchor) => (
+              {["top"].map((anchor) => (
                 <Fragment key={anchor}>
                   <Button color="inherit" onClick={toggleDrawer(anchor, true)}>
                     <MenuIcon />
