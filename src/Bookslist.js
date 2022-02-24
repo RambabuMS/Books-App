@@ -21,7 +21,7 @@ export function Booklist() {
       .then((data) => data.json()) //Response Object
       .then((mvs) => setBooklist(mvs));
   };
-
+   //useEffect is implemented here
   useEffect(() => getBooks(), []);
 
   // CRUD - Delete -  DELETE operation is performed here
