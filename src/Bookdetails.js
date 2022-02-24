@@ -9,6 +9,8 @@ export function Bookdetails() {
   console.log(id);
   const [book, setBook] = useState([]);
 
+     //useEffect is implemented here
+     //CRUD - Read - Get is executed here
   useEffect(() => {
     fetch(`${API}/books/${id}`, {
       method: "GET",
