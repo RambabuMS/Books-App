@@ -28,6 +28,10 @@ import MenuBookIcon from "@mui/icons-material/MenuBook";
 
 export default function App() {
   const [mode, setMode] = useState("dark");
+  //useContext is executed by using dark mode from material UI
+  // create context is executed by createtheme
+  // provier is themeprovider and theme is passed there
+  // As all the material UI components are subscribed to dark mode there is no need for usetheme(usecontext)
   const theme = createTheme({
     palette: {
       mode: mode,
