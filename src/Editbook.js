@@ -19,7 +19,7 @@ export function Editbook() {
       .then((data) => data.json()) //Response Object
       .then((bks) => setBook(bks))
       .catch((err) => console.log(err));
-  });
+  },[]);
 
   return <div>{book ? <UpdateBook book={book} /> : <h2>Loading</h2>}</div>;
 }
