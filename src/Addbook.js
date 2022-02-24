@@ -18,7 +18,7 @@ export const bookValidationSchema = yup.object({
   info: yup.string().required("Why not fill this info? 😉").min(20),
 });
 
-export function Addbook({ booklist, setBooklist }) {
+export function Addbook() {
   const history = useHistory();
 
   const formik = useFormik({
