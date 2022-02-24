@@ -13,6 +13,8 @@ export function Editbook() {
   const [book, setBook] = useState(null);
 
   // CRUD - Read -  GET operation is performed here
+     //useEffect is implemented here
+
   useEffect(() => {
     fetch(`${API}/books/${id}`, {
       method: "GET",
