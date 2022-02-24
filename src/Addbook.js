@@ -32,12 +32,12 @@ export function Addbook() {
     },
     validationSchema: bookValidationSchema,
     onSubmit: (newBook) => {
-      addMovie(newBook);
+      addBook(newBook);
     },
   });
 
   // CRUD - create -  POST operation is performed here
-  const addMovie = (newBook) => {
+  const addBook = (newBook) => {
     console.log("onSubmit", newBook);
     fetch(`${API}/books/`, {
       method: "POST",

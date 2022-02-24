@@ -21,6 +21,7 @@ export function Booklist() {
       .then((data) => data.json()) //Response Object
       .then((mvs) => setBooklist(mvs));
   };
+
   useEffect(() => getBooks(), []);
 
   // CRUD - Delete -  DELETE operation is performed here
@@ -35,6 +36,7 @@ export function Booklist() {
       <h1 className="head">
         <LibraryBooksIcon /> Motivational Books Mini Library
       </h1>
+      S
       <div className="list">
         {booklist.map(
           ({ name, poster, author, id, year, info, summary }, index) => (
