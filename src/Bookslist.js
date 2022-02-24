@@ -19,7 +19,7 @@ export function Booklist() {
       .then((data) => data.json()) //Response Object
       .then((mvs) => setBooklist(mvs));
   };
-  useEffect(() => getBooks());
+  useEffect(() => getBooks(),[]);
 
   const deleteBook = (id) => {
     fetch(`${API}/books/${id}`, {
