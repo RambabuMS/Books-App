@@ -36,6 +36,7 @@ export function Addbook({ booklist, setBooklist }) {
     },
   });
 
+  // CRUD - create -  POST operation is performed here
   const addMovie = (newBook) => {
     console.log("onSubmit", newBook);
     fetch(`${API}/books/`, {

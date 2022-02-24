@@ -22,6 +22,9 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import { Fragment } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
+import HomeIcon from "@mui/icons-material/Home";
+import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
+import MenuBookIcon from "@mui/icons-material/MenuBook";
 
 export default function App() {
   const [mode, setMode] = useState("dark");
@@ -36,17 +39,17 @@ export default function App() {
     {
       name: "HOME",
       onClick: "/",
-      icon: "📙",
+      icon: <HomeIcon />,
     },
     {
       name: "MINI LIBRARY",
       onClick: "/books",
-      icon: "📚",
+      icon: <LibraryBooksIcon />,
     },
     {
       name: "ADD A BOOK",
       onClick: "/books/add",
-      icon: "📖",
+      icon: <MenuBookIcon />,
     },
   ];
 

@@ -12,6 +12,8 @@ export function Booklist() {
 
   const [booklist, setBooklist] = useState([]);
 
+  // CRUD - Read -  GET operation is performed here
+
   const getBooks = () => {
     fetch(`${API}/books`, {
       method: "GET",
@@ -19,8 +21,9 @@ export function Booklist() {
       .then((data) => data.json()) //Response Object
       .then((mvs) => setBooklist(mvs));
   };
-  useEffect(() => getBooks());
+  useEffect(() => getBooks(), []);
 
+  // CRUD - Delete -  DELETE operation is performed here
   const deleteBook = (id) => {
     fetch(`${API}/books/${id}`, {
       method: "DELETE",
@@ -30,7 +33,7 @@ export function Booklist() {
   return (
     <div>
       <h1 className="head">
-        <LibraryBooksIcon /> Self-help Books Mini Library📖
+        <LibraryBooksIcon /> Motivational Books Mini Library
       </h1>
       <div className="list">
         {booklist.map(

@@ -42,6 +42,7 @@ function UpdateBook({ book }) {
     },
   });
 
+  // CRUD - Update -  POST operation is performed here
   const editBook = (UpdatedBook) => {
     console.log("Updated", UpdatedBook);
     fetch(`${API}/books/${book.id}`, {
